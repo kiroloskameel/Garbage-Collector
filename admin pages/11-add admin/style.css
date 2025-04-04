@@ -1,0 +1,67 @@
+/* Add your CSS styles here */
+.nav {
+    background-color: black;
+    color: aliceblue;
+
+}
+.nav h1{
+    margin: auto;
+}
+.container {
+    max-width: 900px;
+    margin: 100px  auto;
+    padding: 80px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"],
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form a {
+    color: blue;
+    text-decoration: none;
+}
+
+body {
+    background-color: #aeb5ab;
+    color: rgb(0, 0, 0);
+    height:fit-content;
+    background-image:url(./image/pngtree-beautiful-hand-painted-green-garbage-collection-illustration-background-image_945238.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: 100%;
+}
+

@@ -1,0 +1,55 @@
+
+
+
+
+
+/* ==== Contact Section ===> */
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 .0625rem var(--primary-color);
+    }
+
+    #contact .btn:hover {
+        background-color: var(--primary-color);
+
+    }
+    .contact-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100px; */
+        /* height: 100px; */
+    }
+    .contact-icon i{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: .5s all;
+        padding-top: 9px;
+        
+    }
+    .contact-i:hover i{
+        background-color: #1C1C1C;
+        color: #F7F7F7;
+    }
+    .container .creat{
+        width: 80%;
+        /* text-align: center; */
+        margin: auto;
+    }
+    .submit button{
+        background-color: hsl(0, 0%, 11%);
+        color: white;
+        border-radius: 7%;
+
+    }
+    .submit:hover button{
+        background-color: #F7F7F7;
+        color: var(--primary-color);
+        border: 3px solid #1C1C1C;
+    }
+
+    
+

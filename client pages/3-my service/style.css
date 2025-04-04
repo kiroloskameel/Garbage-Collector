@@ -1,0 +1,57 @@
+
+/* ===== SERVICES ===> */
+
+.services-box>p {
+    max-width: 300px;
+}
+.ser-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ser-icon i{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(210, 200, 200, 0.61);
+    border: 1px solid rgba(210, 200, 200, 0.61);
+    border-radius: 50%;
+    padding-top: 10px;
+    transition: all 1s;
+}
+.ser-icon:hover i{
+    background-color: black;
+    color: #F7F7F7;
+}
+  .services-box  {
+    background-color: white;
+    box-shadow:1px 1px 1px  rgb(217, 229, 229);
+    height: 400px;
+    
+}
+.btn-primary{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* .services-box {
+    border-radius: 10px;
+} */
+
+
+
+
+
+
+/* ===== CLIENT ====
+
+
+
+
+
+/* ==== Contact Section ===> */
+
+
+
+    
+

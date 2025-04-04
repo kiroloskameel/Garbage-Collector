@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  
+  .box {
+    width: 45%;
+    height: 300px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .box i{
+    font-size: xx-large;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    border-color: #ff6f61;
+  }
+  
+  .add-btn, .view-btn {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .add-btn:hover, .view-btn:hover {
+    background-color: #d83126;
+  }
+  
+  .content {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+  }
+  
+
+  .piechart-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* لضمان أن يكون الرسم البياني فوق جميع العناصر الأخرى */
+}
+#usersChart{
+  margin-top: 150px;
+
+}
+#piechart{
+  margin-top: 200px;
+}

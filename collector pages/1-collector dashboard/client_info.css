@@ -1,0 +1,13 @@
+
+.time{
+    background-color:#a8aea9;
+    /* background-image: url(./img/new-year-composition-with-clock-glasses.jpg); */
+    background-size: 100% 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: 70px;
+    color: black;
+}
+.time h5{
+    margin-top: 50px;
+}

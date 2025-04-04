@@ -1,0 +1,55 @@
+
+
+/* ===== HEADER ===> */
+
+
+
+
+    .container {
+        width: 80%;
+        max-width: 600px; /* تحديد أقصى عرض للعناصر */
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      input[type="text"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: calc(100% - 20px); /* إزالة الحواف الزائدة */
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease-in-out;
+      }
+      
+      input[type="text"]:focus,
+      input[type="tel"]:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #4CAF50; /* تغيير لون الحدود عند التركيز */
+      }
+      
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+      }
+      
+

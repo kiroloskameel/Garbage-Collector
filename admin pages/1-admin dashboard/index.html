@@ -1,0 +1,558 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>crud dashboard</title>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!----css3---->
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!----fontawsem---->
+        <link rel="stylesheet" href="css/all.min.css">
+		
+		
+		<!--google fonts -->
+	
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	
+	
+	<!--google material icon-->
+      <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+      <!-- css -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="style.css">
+    
+
+  </head>
+  <body>
+  
+
+<div class="wrapper">
+
+
+        <div class="body-overlay"></div>
+		
+		<!-------------------------sidebar------------>
+		     <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/1-admin%20dashboard/"><h3><span>pure</span></h3></a>
+            </div>
+            <ul class="list-unstyled components">
+			<li  class="">
+                    <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/2-admin%20my%20profile/INDEX%20admin.php" class="dashboard"><i class="fa-solid fa-circle-user "></i>
+					<span>my profile</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="fa-solid fa-trash pe-1"></i> service</a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/3-bins%20details%20for%20admin%20-%20new/">smart bin</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/9-monthly%20service%20details/">monthly</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/8-single%20time%20order%20details/">single order</a>
+                        </li>
+                    </ul>
+                </li>
+                <li  class="">
+                    <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/4-clients%20details%20for%20admin%20-%20new/" class="dashboard"><i class="fa-solid fa-users pe-1"></i>
+					<span>clients</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="fa-solid fa-users-gear pe-1"></i><span>collector</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+                       
+                        
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/6-collectors%20details%20for%20admin-%20new/">veiw</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/10-add%20collector/add%20collector.php">add</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="fa-solid fa-user-tie pe-1"></i><span>Sub admin</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+                       
+                        
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/5-admins%20details%20for%20admin%20-%20new/">veiw</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/11-add%20admin/add%20admin.php">add</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+                <li  class="">
+                    <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/12-invoices%20details%20for%20admin/" class="dashboard"><i class="fa-solid fa-receipt pe-1"></i>
+					<span>invoice details</span></a>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" 
+					class="dropdown-toggle">
+					<i class="fa-solid fa-face-frown pe-1"></i><span>complaint</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                       
+                        <li>
+                            <a href="http://localhost:8080/garbage%20mangement%20project/admin%20pages/7-admin%20view%20complaint%20and%20respond/">view complaint</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+               
+               
+            </ul>
+
+           
+        </nav>
+		
+		
+		
+		
+		<!--------page-content---------------->
+		
+		<div id="content">
+		   
+		   <!--top--navbar----design--------->
+		   
+		   <div class="top-navbar">
+		      <div class="xp-topbar">
+
+                <!-- Start XP Row -->
+                <div class="row"> 
+                    <!-- Start XP Col -->
+                    <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                        <div class="xp-menubar">
+                               <span class="material-icons text-white">signal_cellular_alt
+							   </span>
+                         </div>
+                    </div> 
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-md-5 col-lg-3 order-3 order-md-2">
+                        <div class="xp-searchbar">
+                            <form>
+                                <div class="input-group">
+                                  <input type="search" class="form-control" 
+								  placeholder="Search">
+                                  <div class="input-group-append">
+                                    <button class="btn" type="submit" 
+									id="button-addon2">GO</button>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                    <!-- Start XP Col -->
+                    <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                        <div class="xp-profilebar text-right">
+							 <nav class="navbar p-0">
+                        <ul class="nav navbar-nav flex-row ml-auto">   
+                            <li class="dropdown nav-item active">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                   <span class="material-icons">notifications</span>
+								   <span class="notification">4</span>
+                               </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+								<span class="material-icons">question_answer</span>
+
+								</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown">
+								<img src="img/user.jpg" style="width:40px; border-radius:50%;"/>
+								<span class="xp-user-live"></span>
+								</a>
+								<ul class="dropdown-menu small-menu">
+                                    <li>
+                                        <a href="#">
+										  <span class="material-icons">
+person_outline
+</span>Profile
+
+										</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="material-icons">
+settings
+</span>Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="logout.php"><span class="material-icons">
+logout</span>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+               
+            </nav>
+							
+                        </div>
+                    </div>
+                    <!-- End XP Col -->
+
+                </div> 
+                <!-- End XP Row -->
+
+            </div>
+		     <div class="xp-breadcrumbbar text-center">
+                <h4 class="page-title">admin</h4>  
+                            
+            </div>
+			
+		   </div>
+		   
+		   
+		   
+		   <!--------main-content------------->
+
+        
+           
+           <!-- Calendar and reqtangels-->
+           <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Calendar</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        .box {
+            width: calc(33.33% - 20px);
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .calendar {
+            width: 100%;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .calendar h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .calendar p {
+            margin: 5px 0 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <h2 id="current-date"></h2>
+        <p id="current-day"></p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h3>Collectors</h3>
+            <p id="collectors-count">Loading...</p>
+        </div>
+        <div class="box">
+            <h3>Zones</h3>
+            <p id="zones-count">Loading...</p>
+        </div>
+        <div class="box">
+            <h3>Admins</h3>
+            <p id="admins-count">Loading...</p>
+        </div>
+        <div class="box">
+            <h3>Uncollected Bins</h3>
+            <p id="uncollected-bins-count">Loading...</p>
+        </div>
+        
+        <div class="box">
+            <h3>Collected Bins</h3>
+            <p id="collected-bins-count">Loading...</p>
+        </div>
+        <div class="box">
+            <h3>Monthly Income</h3>
+            <p id="monthly-income">Loading...</p>
+        </div>
+            </div>
+
+    <script>
+        function updateCalendar() {
+            const date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = date.toLocaleDateString('en-US', options);
+
+            document.getElementById('current-date').textContent = formattedDate.split(', ').slice(1).join(', ');
+            document.getElementById('current-day').textContent = formattedDate.split(', ')[0];
+        }
+
+        async function updateCounts() {
+    try {
+        const response = await fetch('get_data.php');
+        const data = await response.json();
+        document.getElementById('collectors-count').textContent = data.collector_count;
+        document.getElementById('zones-count').textContent = data.zone_count;
+        document.getElementById('admins-count').textContent = data.admin_count;
+        document.getElementById('monthly-income').textContent = data.monthly_income + ' EGP'; 
+        document.getElementById('uncollected-bins-count').textContent = data.uncollected_bins_count;
+        document.getElementById('collected-bins-count').textContent = data.collected_bins_count;
+
+    } catch (error) {
+        document.getElementById('collectors-count').textContent = 'Error';
+        document.getElementById('zones-count').textContent = 'Error';
+        document.getElementById('admins-count').textContent = 'Error';
+        document.getElementById('monthly-income').textContent = 'Error';
+        document.getElementById('uncollected-bins-count').textContent = 'Error';
+        document.getElementById('collected-bins-count').textContent = 'Error';
+
+        console.error('Error fetching counts:', error);
+    }
+}
+
+window.onload = function() {
+    updateCalendar();
+    updateCounts();
+};
+
+setInterval(updateCalendar, 60000);
+
+
+    </script>
+</body>
+</html>
+
+
+
+           <!--  Chart 1 -->
+
+           <!DOCTYPE html>
+           <html>
+           <head>
+               <title>Pie Chart Example</title>
+               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+               <script type="text/javascript">
+                   google.charts.load('current', {'packages':['corechart']});
+                   google.charts.setOnLoadCallback(drawChart);
+           
+                   async function fetchChartData() {
+                       const response = await fetch('getData_chart.php');
+                       const data = await response.json();
+                       return data;
+                   }
+           
+                   async function drawChart() {
+                       const data = await fetchChartData();
+                       const dataTable = google.visualization.arrayToDataTable(data);
+           
+                       const options = {
+                           title: 'User Distribution by Service Type'
+                       };
+           
+                       const chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                       chart.draw(dataTable, options);
+                   }
+           
+                   setInterval(drawChart, 300000); 
+               </script>
+               <style>
+                body {
+                    position:relative;
+                    
+                }
+                #piechart {
+                    position: fixed;
+
+                    bottom: -40px;
+                    right: 20px;
+                    width: 550px; 
+                    height: 330px; 
+                }
+            </style>
+           </head>
+           <body>
+               <div id="piechart"></div>
+           </body>
+           </html>
+
+
+
+<!--  Chart 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Trend Chart</title>
+    <!-- تحميل مكتبة Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        #usersChart {
+            position: fixed;
+            bottom: 20px; 
+            left: 38%; 
+            transform: translateX(-50%);
+            width: 750px; 
+            height: 310px;
+        }
+    </style>
+</head>
+<body>
+    <div id="usersChart"></div>
+
+    <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'client_chart.php', true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    var dataTable = new google.visualization.DataTable();
+                    dataTable.addColumn('number', 'Day');
+                    dataTable.addColumn('number', 'Registered Users');
+                    for (var i = 0; i < data.length; i++) {
+                        dataTable.addRow([parseInt(data[i].registration_day), parseInt(data[i].client_count)]);
+                    }
+
+                    var options = {
+                        title: 'Daily Registration Trend',
+                        legend: { position: 'bottom' },
+                        colors: ['#2196F3'], 
+                        hAxis: { title: 'Day' }, 
+                        vAxis: { title: 'Registered Users' },
+                        pointSize: 5, // حجم النقاط
+                        pointShape: 'circle', // شكل النقاط
+                        curveType: 'function', // نمط المنحنى
+                        chartArea: { width: '80%', height: '70%' } 
+                    };
+
+                    var chart = new google.visualization.LineChart(document.getElementById('usersChart'));
+                    chart.draw(dataTable, options);
+                } else {
+                    console.error('Failed to fetch data');
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="script.js"></script>
+  
+  
+  <script type="text/javascript">
+        
+		$(document).ready(function(){
+		  $(".xp-menubar").on('click',function(){
+		    $('#sidebar').toggleClass('active');
+			$('#content').toggleClass('active');
+		  });
+		  
+		   $(".xp-menubar,.body-overlay").on('click',function(){
+		     $('#sidebar,.body-overlay').toggleClass('show-nav');
+		   });
+		  
+		});
+		
+</script>
+  
+  
+
+
+
+  </body>
+  
+  </html>
+
+
+
+
+
+

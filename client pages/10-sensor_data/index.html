@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sensor Display</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.distance-container {
+    text-align: center;
+}
+
+.distance-display {
+    font-size: 36px;
+    color: green;
+    transition: color 0.3s ease-in-out;
+}
+
+.distance-high {
+    color: red;
+}
+
+</style>
+</head>
+<body>
+<h1>Sensor Display</h1>
+<p>Distance : <span id="distance" class="distance-display">Loading...</span></p>
+
+<script>
+function updateDistance() {
+    // إنشاء طلب XMLHttpRequest لاستدعاء صفحة PHP التي تعيد بيانات السينسور
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var distance = this.responseText;
+            var distanceElement = document.getElementById("distance");
+            distanceElement.textContent = distance + " cm";
+            distanceElement.classList.toggle("distance-high", parseInt(distance) > 30);
+        }
+    };
+    xhr.open("GET", "sensor_display_data.php", true);
+    xhr.send();
+}
+
+// تحديث بيانات السينسور كل 5 ثوانٍ
+setInterval(updateDistance, 5000);
+updateDistance(); // تحديث بيانات السينسور عند تحميل الصفحة
+</script>
+</body>
+</html>
